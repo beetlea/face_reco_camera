@@ -1,4 +1,4 @@
-<h1>We are writing a program for a storage camera with a face recognition function</h1>
+<h1>SmartBox - box with face recognition function (Keras and Arduino)</h1>
 <img src="https://github.com/beetlea/face_reco_camera/blob/master/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA.JPG?raw=true"></src>
 Facial recognition has already taken over the whole world. All major countries are already using this useful feature. Why not make people's lives even more convenient and embed facial recognition in the luggage storage?
 
