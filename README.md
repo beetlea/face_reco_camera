@@ -29,7 +29,8 @@ cascade_path = 'haarcascade_frontalface_alt2.xml'
 </code>
 
 Функция, которая форматирует картинку и прогоняет ее через нейросеть
-<code>
+<details>
+    <code>
 def calc_embs(imgs, margin, batch_size):
     fram1e = cv2.resize(imgs,(160,160))
     ofg2 = np.array(fram1e)
@@ -41,7 +42,8 @@ def calc_embs(imgs, margin, batch_size):
     embs = l2_normalize(np.concatenate(embs1))
     return embs   
 </code>
-
+</details>
+    
 A function that, when a button is pressed for the first time, saves the face of a person who has passed through the neural network, and the second time, having driven a new face through the network, compares it with the saved one
 <details>
 <code>
@@ -96,15 +98,13 @@ def reco_face(frame, i):
 </details>
 
 Well, the main. It all starts with the arduino, when the letter B is fed through the uart, which means that the button is pressed. Next, a command is sent to the arduino to open the drawer and the face recognition and preservation function is launched. Then, if the command to press the button came from the arduino again, we run the recognition function again and if the faces converge, then open the box.
-<code>
+<details>
+    <code>
 ser = serial.Serial('COM3', 9600, write_timeout=1, timeout=0.1)  
 print(ser.name)         # check which port was really used
-##sio = io.TextIOWrapper(io.BufferedRWPair(ser, ser))
-#ser.close()
 cap = cv2.VideoCapture(0)
 zz = 0
 while(True):
-# Capture frame-by-frame
     ret, frame = cap.read()
     frame1 = search_face(frame)
     cv2.imshow('ffff', frame1)
@@ -120,7 +120,6 @@ while(True):
         if mmm == 1:
             print("otkrivaio")    
             while u!=1:
-
                 u = ser.write( b'P') 
             u=0  
             h = 0  
@@ -130,6 +129,7 @@ while(True):
 cap.release()
 cv2.destroyAllWindows()
 </code>
-
+</details>
+    
 <h2>Video</h2>
 https://www.youtube.com/watch?v=iWQTNod7UKw&t
