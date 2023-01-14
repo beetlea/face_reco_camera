@@ -1,4 +1,5 @@
 <h1>We are writing a program for a storage camera with a face recognition function</h1>
+<img src="https://github.com/beetlea/face_reco_camera/blob/master/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA.JPG?raw=true"></src>
 Facial recognition has already taken over the whole world. All major countries are already using this useful feature. Why not make people's lives even more convenient and embed facial recognition in the luggage storage?
 
 <h2>To do this, we will need</h2>
@@ -131,7 +132,4 @@ cv2.destroyAllWindows()
 </code>
 
 <h2>Video</h2>
-<script src="https://cdn.jsdelivr.net/gh/thelevicole/youtube-to-html5-loader@2.0.0/dist/YouTubeToHtml5.js"></script>
-<script>new YouTubeToHtml5();</script>
-<video src="https://www.youtube.com/embed/iWQTNod7UKw" controls="true"></video>
-<iframe src="https://www.youtube.com/embed/iWQTNod7UKw" title="YouTube video player" allowfullscreen></iframe>
+https://www.youtube.com/watch?v=iWQTNod7UKw&t
