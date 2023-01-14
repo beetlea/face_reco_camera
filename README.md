@@ -28,7 +28,7 @@ model = load_model(model_path)
 cascade_path = 'haarcascade_frontalface_alt2.xml'
 </code>
 
-Функция, которая форматирует картинку и прогоняет ее через нейросеть
+A function that formats an image and runs it through a neural network
 <details>
     <code>
 def calc_embs(imgs, margin, batch_size):
